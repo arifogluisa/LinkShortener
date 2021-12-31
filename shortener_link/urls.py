@@ -18,7 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')), # this is for browsable api page
     path('rest-auth/', include('rest_auth.urls')), # these endpoints came with django-rest-auth
     path('rest-auth/registration/', include('rest_auth.registration.urls')),
     path('', include('core.urls')),
